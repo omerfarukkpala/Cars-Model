@@ -61,7 +61,7 @@ h3 {
   justify-content: space-between;  /* İçerikler arası boşluğun eşit olmasını sağladım. */
 }
 
-.col4 {
+.col3 {
   flex-grow: 1;
   width: 50%;  /* Sütunları eşit olarak 2 ye böldük*/
   padding: 20px;
@@ -225,7 +225,21 @@ header .logo img {
   height: 100%;
   transition: .5s ease;
 }
-
+.engineOverlay3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(80, 13, 22, .7);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.engineContainer:hover .engineOverlay3 {
+  width: 100%; 
+  left: 0;   
+}
 .engineContainer:hover .engineOverlay1 {
   width: 100%;    
 }
