@@ -31,7 +31,7 @@ h1 {
 }
 
 .sectionArea {
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 
@@ -61,7 +61,7 @@ h3 {
   justify-content: space-between;  /* İçerikler arası boşluğun eşit olmasını sağladım. */
 }
 
-.col2 {
+.col4 {
   flex-grow: 1;
   width: 50%;  /* Sütunları eşit olarak 2 ye böldük*/
   padding: 20px;
@@ -214,3 +214,100 @@ header .logo img {
   height: auto;
 }
 
+.engineOverlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(80, 13, 22, .7);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay1 {
+  width: 100%;    
+}
+
+.engineText {
+  white-space: nowrap; /*Kelimelerin alt alta olmasını engelliyor*/
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*Bu kod sayesinde aslında yazı tam orada duruyor*/
+}
+
+.engineOverlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: rgba(80, 13, 22, .7);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay2 {
+  width: 100%; 
+  left: 0;   
+}
+
+footer {
+  background-color: #500D16;
+  text-align: center;
+}
+
+.footerItem {
+  padding: 20px;
+}
+
+.footerItem img {
+  height: 60px;
+  opacity: .7;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: #95a5a6;
+  line-height: 20px;
+}
+
+.fab {
+  font-size: 30px;
+  color: #95a5a6;
+  line-height: 30px;
+  transition: all .3s ease;
+}
+
+.fab:hover {
+  color: #fff;
+  transform: scale(1.25);
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: #95a5a6;
+  letter-spacing: 2px;
+  transition: all .3s ease;
+}
+
+.footerLinks a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.socialLinks li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
