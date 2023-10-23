@@ -535,13 +535,13 @@ h4 {
 }
 
 .teamMemberImg {
-  display: block;     /*Block dememizin sebebi yükseklik ve genişlik verebilmek için*/
+  display: block;     
   width: 100%;
   height: 100%;
 }
 
 .teamMemberOverlay {
-  position: absolute;   /*Kendisini kapsayan classın position özelliğine relative vermeden burada absoulute vermek işe yaramaz*/
+  position: absolute;   
   top: 0;
   bottom: 0;
   left: 0;
@@ -572,18 +572,18 @@ h4 {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);    
+  transform: translateX(-50%);    /* X yazmamıza rağmen bu kod dikeyde ortalamayı sağlıyor*/
   transition: all .5s ease;
   padding: 20px;
   text-align: center;
 }
 
 .memberSocialLinks {
-  text-align: center; 
+  text-align: center; /*Üstteki text-align:center aynı işi yapıyor sanırım gereksiz oldu bu kod.*/
 }
 
 .memberSocialLinks li {
-  display: inline;    /*Sosyal medya ikonlarını alt alta değilde yan yana göstermek için kullanıldı*/
+  display: inline;    /*Sosyal medya ikonlarını alt alta değilde yan yana göstermek için kullandım*/
   margin-left: 5px;
   margin-right: 5px;
 }
