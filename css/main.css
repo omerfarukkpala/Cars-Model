@@ -31,8 +31,9 @@ h1 {
 }
 
 .sectionArea {
-  padding: 80px 0;
+  padding: 50px 0;
 }
+
 
 h3 {
   font-size: 16px;
@@ -48,7 +49,7 @@ h3 {
 }
 
 .featuresBody .container {
-  justify-content: space-between;  /* İçerikler arası boşluğun eşit olmasını sağladım. */
+  justify-content: space-between;  /* İçerikler arası boşluğun eşit olmasını sağlanması için */
 }
 
 .col3 {
@@ -94,6 +95,9 @@ header .logo img {
   background-color: #500D16;
   color: #fff;
 }
+.menu  li a:last-child {
+  padding-right: 0;
+}
 
 #mainSlider {
   height: 500px;
@@ -125,5 +129,88 @@ header .logo img {
 
 .item {
   padding: 10px;
+}
+.zoom {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;    /* .col3'ün width özelliğine 33.33% verdiğimizden dolayı buradaki 100% o sınırlandırılmış alanda çalışıyor */
+  vertical-align: top;    
+}
+
+.zoom img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all .5s ease;
+}
+
+.item .itemText {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #500D16;
+}
+
+.item:hover .zoom img {
+  transform: scale(1.25);
+}
+
+.item:hover h3 {
+  color: #fff;
+}
+
+.item:hover .itemText {
+  color: #fff;
+  background-color: #500D16;
+  transition: all .5s ease;
+}
+
+.btnDetails {
+  color: #500D16;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #500D16;
+  transition: all .5s ease;
+}
+
+.item:hover .btnDetails {
+  color: #fff;    
+  border: 1px solid #fff;    
+}
+
+.itemText p {
+  margin: 20px 0;
+}
+
+
+#parallax {
+  background: linear-gradient(
+              rgba(0, 0, 0, .7),
+              rgba(0, 0, 0, .7)
+              ),
+              url('../img/parallax.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center;  
+}
+
+#parallax p {
+  color: #fff;
+}
+
+.engineTop {
+  text-align: center;
+}
+
+.engineContainer {
+  position: relative;
+  width: 100%;
+}
+
+.imageOver {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
