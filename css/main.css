@@ -95,9 +95,8 @@ header .logo img {
   background-color: #500D16;
   color: #fff;
 }
-.menu  li a:last-child {
-  padding-right: 0;
-}
+
+
 
 #mainSlider {
   height: 500px;
@@ -324,4 +323,131 @@ footer p {
   display: inline-block;
   width: 50px;
   height: 50px;
+}
+
+
+/* CARS SETTINGS */
+
+#carsSlider {
+  height: 400px;
+  background: url('../img/slideImage2.jpg') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;  /* Resim arka planda sabitmiş gibi oluyor */
+}
+
+#carsCaption {
+  height: 400px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#inspect {
+  background-color: #f5f5f5;
+}
+
+.inspectTop {
+  text-align: center;
+}
+
+.inspectBody .col2 {
+  display: flex;
+}
+
+.inspectImage {
+  width: 40%;
+}
+
+.inspectImage img {
+  width: 100%;
+  height: auto;
+}
+
+.inspectText {
+  width: 50%;
+  padding-left: 10px;
+}
+
+.date {
+  color: #333;
+  font-size: 12px;
+  font-style: italic;
+}
+
+h4 {
+  color: #550D16;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.inspectText a {
+  float: right;
+  text-decoration: none;
+  color: #550D16;
+}
+.inspectText a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.projectXTop {
+  text-align: center;
+}
+
+#projectX .containerFluid {
+  height: 500px;
+  background: url('../img/projectX.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.captionPX {        /* Backgrounda bir opacity vereceğin zaman caption classı altında rgba kullan*/
+  display: flex;
+  background: rgba(0, 0, 0, .7);
+  height: 500px;
+}
+
+.projectXInfo {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 5%;
+  padding-right: 5%;
+}
+
+.projectXTitle {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.projectXBTN {
+  background-color: #500D16;
+  color: #fff;
+  padding: 20px 40px;
+  letter-spacing: 2px;    
+  border: none;
+  margin-top: 20px;
+  transition: all .5s ease;
+}
+
+.projectXBTN:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #500D16;
+  transform: scale(1.1);
+}
+
+.projectXText {
+  color: #fff;
+}
+
+.projectXHighlight {
+  display: inline-block;
+  background-color: #500D16;
+  color: #fff;
+  padding: 30px;
+}
+
+.containerFluid .col2{
+  padding: 0;         /*Yukarıdaki boşluğu almak için yazıldı*/
 }
