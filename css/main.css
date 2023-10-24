@@ -627,7 +627,7 @@ h4 {
 }
 
 .gallerySliderItem img {
-  width: 25%;
+  width: 20%;
   float: left;
   height: auto;    
 }
@@ -654,7 +654,7 @@ h4 {
 
 .contactForm {
   margin: 0 auto;
-  width: 50%;  
+  width: 60%;  
 }
 
 .formItem {
@@ -665,7 +665,7 @@ h4 {
 .formShape {
   color: #fff;
   background-color: #500D16;
-  padding: 10px;
+  padding: 8px;
   width: 8%;
   float: left;
   text-align: center;        
@@ -674,8 +674,8 @@ h4 {
 .formField {
   color: #fff;
   background-color: #500D16;   
-  padding: 20px;    /*Bu değerleri deneyerek verdim.*/
-  width: 85%;
+  padding: 15.5px;    /*Bu değerleri deneyerek verdim.*/
+  width: 91.9%;
   display: block;
   font-size: 14px;
   border: none;   
@@ -697,4 +697,136 @@ h4 {
 .formBtn:hover {
   background-color: #841916;
   transform: scale(1.25);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 960px) {
+  .caption h1 {
+      font-size: 32px;
+      letter-spacing: 2px; 
+  }
+
+  footer .fab {
+      font-size: 24px;       
+  }
+
+  footer h3 {
+      font-size: 16px;
+  }
+
+  .inspectBody .container {
+      flex-direction: column;
+  }
+
+  .inspectBody .container .col2 {
+      width: 100%;
+  }    
+
+  .ourHistoryBody .col2 {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  header .logo {
+      margin: 0 auto;
+  }
+
+  .caption h1 {        
+      font-size: 26px;
+      letter-spacing: 2px;
+  }
+
+  .featuresBody .container {
+      flex-direction: column;
+  }
+
+  .featuresBody .container .col3 {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .engineBody .container {
+      flex-direction: column;
+  }
+
+  .engineBody .container .col2 {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  footer .container {
+      flex-direction: column;
+  }
+
+  footer .container .col3 {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .sectionHeader {
+      font-size: 24px;
+  }
+
+  .inspectBody .container .col2 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+  
+  .teamMemberInfo {
+    font-size: 10px;
+    padding: 8px;
+  }
+  .teamTitle {
+    font-size: 14px;
+  }
+
+  .teamBody .containerFluid {
+      flex-direction: column;
+  }
+
+  .teamBody .containerFluid .col3 {
+      width: 70%;
+      height: auto;
+      margin: 0 auto;
+      padding: 5px;
+  }   
+
+  .formShape {
+      display: none;      /*Form iconlarını yok edildi*/
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .caption h1 {       
+      font-size: 20px;
+      letter-spacing: 0;
+  }
+
+  .featuresBody .container .col3 {
+      width: 100%;     
+  } 
+  
+  
+  .engineBody .container .col2 {
+      width: 100%; 
+  }
+
+  .sectionHeader {
+      font-size: 18px;
+      letter-spacing: 1px;
+  }
+
+  .contactForm {
+      width: 80%;        
+  }    
 }
